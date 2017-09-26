@@ -1,0 +1,317 @@
+
+.container
+{
+    
+    width: 80%;
+}
+
+
+.filtr-item {
+    padding: 1rem;
+    margin-top: 2rem;
+    
+}
+
+.filtr-item img {
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.20);
+}
+
+
+.filtr-item img:hover
+{
+    
+    opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.item-desc {
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+    padding: 0.5rem;
+    z-index: 1;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+
+ul 
+
+{
+
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 900px)
+    {
+        
+.multifilter
+        {
+            padding: 0;
+            margin: auto;
+            width: 100%;
+            font-size: 0px;
+
+        }
+        
+    
+.multifilter li
+        {
+    
+    color: white;
+    font-size: 12px;
+    width: 20%;
+    height: 80px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+    margin: 0;
+  
+
+}
+        
+
+
+
+.multifilter li.shuffle-btn
+    
+{
+             border-radius: 15px 2px 15px 2px;
+                      -webkit-animation-duration: 2s;
+            -moz-animation-duration: 2s;
+            -ms-animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+              -moz-animation-delay: 0.5s;
+            -ms-animation-delay: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+              -moz-animation-iteration-count: infinite;
+             -ms-animation-iteration-count: infinite;
+
+}
+        
+
+.filtr-search {
+    background: url(../images/loupe.png) no-repeat scroll 2.5rem 2.5rem;
+    background-color: #342A21;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    height: 80px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+-webkit-transition: linear 0.5s;
+    transition: linear 0.3s;
+    border: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   font-size:12px;
+    text-align: center;
+    color: grey;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   font-size:12px;
+   opacity:  1;
+     text-align: center;
+    color: grey;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   font-size:12px;
+     text-align: center;
+    color: grey;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   font-size:12px;
+     text-align: center;
+    color: grey;
+}
+        
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px)
+    {
+    
+.multifilter li, shuffle-btn
+                        {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    display: block;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+                        
+.filtr-search {
+    background: url(../images/loupe.png) no-repeat scroll 2.5rem 2.5rem;
+    background-color: #342A21;
+    text-transform: uppercase;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    width: 300px;
+    color: white;
+    text-align: center;
+
+-webkit-transition: linear 0.5s;
+    transition: linear 0.3s;
+    border: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   font-size:12px;
+    text-align: center;
+    color: grey;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   font-size:12px;
+   opacity:  1;
+     text-align: center;
+    color: grey;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   font-size:12px;
+     text-align: center;
+    color: grey;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   font-size:12px;
+     text-align: center;
+    color: grey;
+}
+   
+    }
+            
+
+
+
+
+
+
+
+
+
+
+
+
+.multifilter li.bass
+{
+    background-color: #2C0735;
+       -webkit-transition: linear 0.5s;
+    transition: linear 0.5s;
+}
+
+.multifilter li.bass:hover
+{
+    background-color: #3F1D47;
+}
+
+.multifilter li.gear
+{
+    background-color: #4E148C;
+       -webkit-transition: linear 0.5s;
+    transition: linear 0.5s;
+}
+
+.multifilter li.gear:hover
+{
+    background-color: #7E54AB;
+}
+
+.multifilter li.landscapes
+{
+    background-color: #613DC1;
+       -webkit-transition: linear 0.5s;
+    transition: linear 0.5s;
+}
+
+.multifilter li.landscapes:hover
+{
+    background-color: #8C71D1;
+}
+
+
+.multifilter li.other
+{
+    background-color: #52B788;
+       -webkit-transition: linear 0.5s;
+    transition: linear 0.5s;
+}
+
+.multifilter li.other:hover
+{
+    background-color: #2D644B;
+}
+
+
+/* Shuffle and sort controls */
+select {
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
+.multifilter li.shuffle-btn {
+    background-color: #000000;
+      -webkit-transition: linear 0.5s;
+    transition: linear 1s;
+}
+
+.multifilter li.shuffle-btn:hover {
+    background-color: #FFFFFF;
+        color: #000000;
+}
+
+
+
+
