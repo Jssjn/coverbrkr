@@ -1,4 +1,6 @@
-@font-face {
+@font-face 
+
+{
     font-family: 'unrealisedregular';
     src: url('../fonts/unrealised-webfont.woff2') format('woff2'),
          url('../fonts/unrealised-webfont.woff') format('woff');
@@ -7,11 +9,50 @@
 
 }
 
+.text
+{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 11px;
+}
+
+
+video 
+
+{ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+
+.stopfade 
+
+{ 
+    opacity: .5;
+}
+
+
 body
+
 {
 
-font-family : helvetica;
-margin-top: 1rem;
+    font-family : helvetica;
+    margin-top: 1rem;
+    
+}
+    
+     /*
 background: linear-gradient(270deg, #000000, #1d7f59);
 background-size: 400% 400%;
 
@@ -35,51 +76,161 @@ animation: AnimationName 30s ease infinite;
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-
-@media screen and (min-width: 900px)
-                    {
-.logo a
-{
-    font-size: 60px;
-    font-family: unrealisedregular; 
-    color: white;
-    text-shadow : 2px 2px 2px rgba(0,0,0,0.8);
-    text-decoration: none;
-    display: block; 
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-    }
-                        
-
-@media screen and (max-width: 900px)
-{
-
     
+    */
+
 .logo a
+
 {
     font-size: 60px;
     font-family: unrealisedregular; 
     color: white;
-    text-shadow : 2px 2px 2px rgba(0,0,0,0.8);
+    text-shadow : 1px 1px 1px rgba(0,0,0,0.9);
     text-decoration: none;
     display: block; 
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 17rem;
+}
+
+.description
+
+{
+    
+    display: block; 
+    text-align: center;
     margin-bottom: 3rem;
+    font-family: signpainter;
+    color: white;
+    font-size: 32px;
+    text-shadow : 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.top ul
+
+{
+    float: right;
 
 }
-    }
 
+.elements li
+
+{
+    display: inline-block;
+    color: white;
+   
+}
+        
+.elements a
+
+{
+                            
+    border: 1px solid #FFFFFF;
+}
+                        
+.elements a:after
+                        
+{
+    background: #000;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(25deg);
+                        
+}
+    
+.elements a:link, .elements a:visited 
+
+{
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+
+}
+        
+.elements a:link:after, .elements a:visited:after
+
+{
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+
+}
+
+.elements a:link:hover, .elements a:visited:hover
+
+{
+	color: #FFF;
+	text-shadow: none;
+}
+
+.elements a:link:hover:after, .elements a:visited:hover:after
+
+{
+	height: 450%;
+}
+
+.elements a:link, .elements a:visited
+
+{
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:10px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+
+}
+
+
+.fb-share-button
+
+{
+    float: right;
+    margin-left: 100%;
+    
+}
+                        
 
 .copyright
 
 {
     border-radius: 15px 2px 15px 2px;
-    background-color: rgba(0,0,0,0.4);
-    width: 30%;
+    background-color: rgba(255,255,255,0.1);
     display: block; 
     margin: 0 auto;
     font-size: 12px;
@@ -89,3 +240,36 @@ animation: AnimationName 30s ease infinite;
     margin-top: 8rem;
     padding : 1.5rem;
 }
+
+
+@media screen and (min-width: 900px)
+    
+    
+    {   
+        
+.copyright
+
+{
+
+    width: 20%;
+
+}
+        
+        }
+                        
+
+@media screen and (max-width: 900px)
+
+
+    {
+
+
+.copyright
+
+{
+
+    width: 40%;
+   
+}
+
+    }

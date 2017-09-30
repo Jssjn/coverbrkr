@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Dynamic Fishing</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/filterizr.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+      
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+<link rel="manifest" href="favicons/manifest.json">
+<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+      
+  </head>
+    
+    
+<body>
+      
+      
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      
+    <video id="bgvid" playsinline autoplay muted loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="video4.mov" type="video/mp4">
+      </video> 
+      
+      
+      
+      
+       <div class="container">
+        
+            
+    <div class="top">
+            <ul class="elements">
+                <li class="about"><a class="about" href="about.html">ABOUT</a></li>
+            <li class="contact"><a class="contact" href="contact.html">MAIL</a></li>
+        </ul>
+        
+            </div>
+            
+    <div class="fb-share-button" data-href="http://coverbrkr.com" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcoverbrkr.com%2F&amp;src=sdkpreparse">Partager</a></div>
+      
+            
+    <div class="logo">
+        <a href="https://coverbrkr.com">coverbrkr</a>
+        <span class="description">Dynamic Fishing</span>
+    </div>
+        
+    
+    </div>
+      
+    
+    <row>
+    
+    <div class="text">
+    <h3>Introduction</h3>
+        
+    <p>Coverbrkr est une plateforme personnelle dédiée à la pêche sportive aux leurres. Passionné depuis l'enfance', je ne me suis vraiment intéréssé à cette branche du loisir il n'y a que quelques années seulement. Capturer un poisson dans des eaux convoitées armé d'une seule immitation requiert d'analyser et de comprendre le comportement de l'espèce mais aussi l'environnement dans lequel elle évolue. Celà requiert du matériel et une technique adaptée que le pêcheur n'aura cesse d'affiner. Celà enseigne aussi la persévérance, et la confrontation avec la nature.
+    
+    <p>L'essentiel des photos ont été prises dans le sud-est de la France, le var plus précisémment, que j'éspère faire découvrir un peu plus par le biais de cette plateforme.</p>
+        
+    <h3>Matériel</h3>
+        
+    <p>CASTING SAKURA SHINJIN MH VOYAGE<br/>
+        SPINNING DAÏWA EXCELLER MH<br/>
+        SPINNING SAKURA SPORTISM L<br/>
+        SHIMANO CAENAN<br/>
+        DAÏWA CALDIA 2500<br/>
+        tresse powerpro yellow
+    </p></div>
+    
+    </row>
+      
+      
+      
+            <!-- COPYRIGHT -->
+      
+      
+      
+      
+    <div class="copyright">made with love by JSSJN<br/>
+      © 2007 coverbrkr v1.0<br/>
+      Tous droits réservés</div>
+      
+            
+      
+      
+            <!-- SCRIPT VIDEO -->
+      
+      
+      
+      
+      <script>var vid = document.getElementById("bgvid");
+          var pauseButton = document.querySelector("#polina button");
+          if (window.matchMedia('(prefers-reduced-motion)').matches) {
+        vid.removeAttribute("autoplay");
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+                }
+
+          function vidFade() {
+              vid.classList.add("stopfade");
+                }
+
+          vid.addEventListener('ended', function()
+                        {
+              // only functional if "loop" is removed 
+              vid.pause();
+              // to capture IE10
+              vidFade();
+          }); 
+
+          pauseButton.addEventListener("click", function() {
+    vid.classList.toggle("stopfade");
+    if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
+      </script>
+
+    
+      
+    </body>
+</html>

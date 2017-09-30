@@ -1,30 +1,39 @@
 
 .container
+
 {
     
-    width: 80%;
+    width: 70%;
+    
 }
 
 
-.filtr-item {
+.filtr-item 
+
+{
     padding: 1rem;
     margin-top: 2rem;
+    opacity: 0.5;
     
 }
 
-.filtr-item img {
+.filtr-item img 
+
+{
     border-radius: 5px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.20);
+    
 }
-
 
 .filtr-item img:hover
+
 {
     
-    opacity: 1;
-	-webkit-animation: flash 1.5s;
-	animation: flash 1.5s;
+
 }
+
+
+
 
 @-webkit-keyframes flash {
 	0% {
@@ -44,7 +53,9 @@
 }
 
 
-.item-desc {
+.item-desc 
+
+{
     background-color: rgba(0,0,0,0.4);
     color: white;
     position: absolute;
@@ -73,7 +84,7 @@
 {
     padding: 0;
     margin: auto;
-    width: 100%;
+    width: 80%;
     font-size: 0px;
 
 }
@@ -85,12 +96,13 @@
     color: white;
     font-size: 12px;
     width: 20%;
-    height: 80px;
+    height: 70px;
     cursor: pointer;
     display: inline-block;
     text-transform: uppercase;
     padding: 1rem 1rem;
     margin: 0;
+            box-shadow: -1px 2px 2px rgba(255, 255, 255, 0.2) inset; 
   
 
 }
@@ -104,12 +116,12 @@
     -webkit-animation-duration: 2s;
     -moz-animation-duration: 2s;
     -ms-animation-duration: 2s;
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.5s;
-    -ms-animation-delay: 0.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -webkit-animation-iteration-count: 4;
+    -moz-animation-iteration-count: 4;
+    -ms-animation-iteration-count: 4;
 
 }
         
@@ -128,6 +140,7 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    font-size: 12px;
     
 -webkit-transition: linear 0.5s;
     transition: linear 0.3s;
@@ -165,14 +178,20 @@
 
 
 
-
-
-
-
-
 @media screen and (max-width: 900px)
-    {
     
+
+    {
+ 
+        
+.multifilter
+
+{
+            
+    padding: 0;
+        
+}
+        
 .multifilter li, shuffle-btn
 
 {
@@ -187,6 +206,16 @@
     padding: 1rem 1rem;
     margin-right: auto;
     margin-left: auto;
+}
+
+.multifilter li.shuffle-btn
+    
+{
+    border-radius: 15px 2px 15px 2px;
+    -webkit-animation-iteration-count: 0;
+    -moz-animation-iteration-count: 0;
+    -ms-animation-iteration-count: 0;
+
 }
 
 
@@ -204,7 +233,6 @@
     width: 300px;
     color: white;
     text-align: center;
-
     -webkit-transition: linear 0.5s;
     transition: linear 0.3s;
     border: none;
@@ -232,14 +260,9 @@
     color: grey;
 }
    
-    }
+    
+        }
             
-
-
-
-
-
-
 
 
 
