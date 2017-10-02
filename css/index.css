@@ -16,8 +16,20 @@
     margin-right: auto;
     color: white;
     font-size: 11px;
+    text-align: center; 
 }
 
+
+.profil
+{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+}
 
 video 
 
